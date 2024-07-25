@@ -1,0 +1,72 @@
+/* Navigation Link Styles */
+.nav-link-custom {
+  position: relative;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.nav-link-custom:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #d6bd97;
+}
+
+.nav-link-custom:active {
+  transform: scale(1.1);
+}
+
+/* Background for header */
+.custom-header {
+  background-color: transparent;
+}
+
+.navbar-toggler {
+  border-color: #c5b59d !important;
+ 
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(214, 189, 151, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
+}
+
+/* Offcanvas custom styles */
+.offcanvas-start {
+  width: 250px;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #c58585;
+  background-color: #c5b59d;
+}
+
+.offcanvas-body {
+  padding: 1rem;
+  background-color: #cec3c3;
+}
+
+.offcanvas-body .nav-link {
+  color: #5d4747;
+  padding: 0.5rem 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.offcanvas-body .nav-link:hover {
+  background-color:#c5b59d;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+ 
+  .ml-auto {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: white;
+      text-align: center;
+  }
+}
+
+
