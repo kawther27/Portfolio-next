@@ -1,11 +1,11 @@
 
 import React, { Children } from 'react'
-import Header from './Header'
+import HeaderClient from './HeaderClient';
 import Footer from './Footer'
 function Layout({children}) {
   return (
      <div className="d-flex flex-column min-vh-100">
-        <Header/>
+       <HeaderClient />
         <main className="flex-grow-1">
          {children}
         </main>

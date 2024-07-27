@@ -1,15 +1,27 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import '../styles/About.css';
-import profilePhoto from '../assets/images/photoProfile.jpg';
+import Image from 'next/image';
+import '../../styles/About.css';
+import Layout from '../components/Layout';
+import profilePhoto from '../../public/images/photoProfile.jpg';
 
 function About() {
   return (
+    <Layout>
     <section id="about" className="about-section">
       <Container>
         <Row className="align-items-center">
-          <Col md={4}>
-          <img src={profilePhoto} alt="Profile" style={{ borderRadius: '15px', border: '2px solid #d6bd97', padding: '5px' }} className="img-fluid profile-photo" />
+          <Col md={4}  className="d-flex justify-content-center">
+          <Image 
+                src={profilePhoto} 
+                alt="Profile" 
+                style={{ borderRadius: '15px',
+                border: '2px solid #d6bd97',
+                padding: '5px' }} 
+                className="img-fluid profile-photo" 
+                width={300}
+                height={300}
+              />
           </Col>
           <Col md={8}>
             <div className="about-text">
@@ -31,6 +43,7 @@ function About() {
         </Row>
       </Container>
     </section>
+    </Layout>
   );
 }
 

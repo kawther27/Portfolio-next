@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("./src/assets/images/backgroud-photo.jpg") no-repeat center center/cover; 
+  background: url("/images/me1.jpg") no-repeat center center/cover; 
   z-index: -1;
   display: flex;
   flex-direction: column;
